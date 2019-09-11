@@ -1,4 +1,8 @@
 'use strict'
+
+var name = prompt('What is your name?')
+alert('Hello, ' + name +' welcome to my webpage!')
+
 var answerFeel = prompt('Have you had a good day? (y/n)').toLowerCase();
 if(answerFeel === 'yes' || answerFeel === 'y')
 { alert('Thats great, I hope it keeps being great!');console.log('User had great day');}
