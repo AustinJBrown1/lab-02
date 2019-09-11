@@ -1,7 +1,7 @@
 'use strict'
 
 var name = prompt('What is your name?')
-alert('Hello, ' + name +' welcome to my webpage!')
+alert('Hello ' + name +', welcome to my webpage!')
 alert('Now that introductions are in order, would you like to take a short quiz?')
 
 var answerTown = prompt('Am I from a town in texas? (y/n)').toLowerCase();
@@ -24,7 +24,7 @@ alert('If only you were right about that!');console.log('User did not guess corr
 
 var answerSchool = prompt('Did I graduate highschool in may of 2019? (y/n)').toLowerCase();
 if(answerSchool === 'yes' || answerSchool === 'y')
-{ alert('Yes, I did ' + name + ' and I am so glad I am done with it!');console.log('User guessed correctly');}
+{ alert('Yes, I did and I am so glad to be done with it!');console.log('User guessed correctly');}
 else{
 alert('I would be very sad if you were right.');console.log('User did not guess correctly')};
 
