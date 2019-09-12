@@ -6,7 +6,8 @@ var name = prompt('What is your name?')
 
 var answerTown = prompt('Am I from a town in texas? (y/n)').toLowerCase();
 
-if(answerTown === 'yes' || answerTown === 'y'){ 
+if(answerTown === 'yes' || answerTown === 'y')
+{ 
     alert('Right, its a lovely place right north of Dallas !');
     console.log('User guessed correctly');
 }else{
