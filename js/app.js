@@ -1,30 +1,54 @@
 'use strict'
-var answerFeel = prompt('Have you had a good day? (y/n)').toLowerCase();
-if(answerFeel === 'yes' || answerFeel === 'y')
-{ alert('Thats great, I hope it keeps being great!');console.log('User had great day');}
-else{
-alert('I\'m sorry. I hope something happens to make it better.');console.log('User had bad day')};
 
-var answerDog = prompt('Did you see you see any nice dogs on way to work/school? (y/n)').toLowerCase();
-if(answerDog === 'yes' || answerDog === 'y')
-{ alert('I\'m sure they must have been a good dog!');console.log('User saw a nice dog');}
-else{
-alert('Maybe next time.');console.log('User did not see a nice dog')};
+//var name = prompt('What is your name?')
+//alert('Hello ' + name +', welcome to my webpage!')
+//alert('Now that introductions are in order, would you like to take a short quiz?')
 
-var answerCar = prompt('Did you drive to work/school today? (y/n)').toLowerCase();
-if(answerCar === 'yes' || answerCar === 'y')
-{ alert('I hope you didn\'t have any trouble getting here!');console.log('User drove today');}
-else{
-alert('Thats great! Reducing the amount you drive is great for the environment!.');console.log('User did not drive')};
+//var answerTown = prompt('Am I from a town in texas? (y/n)').toLowerCase();
+//if(answerTown === 'yes' || answerTown === 'y')
+//{ alert('Right, its a lovely place right north of Dallas !');console.log('User guessed correctly');}
+//else{
+//alert('Wrong, its a town north of Dallas.');console.log('User guessed incorrectly')};
 
-var answerSleep = prompt('Did you get a good night\'s sleep? (y/n)').toLowerCase();
-if(answerSleep === 'yes' || answerSleep === 'y')
-{ alert('Its always good to be well rested!');console.log('User got sleep');}
-else{
-alert('You should always try to at least eight hours of sleep a night.');console.log('User did not get sleep')};
+//var answerBirthDay = prompt('Is my birth day in october? (y/n)').toLowerCase();
+//if(answerBirthDay === 'yes' || answerBirthDay === 'y')
+//{ alert('Yes, my birthday is on the sixtenth of october!');console.log('User guessed correctly');}
+//else{
+//alert('No my birth is indeed in october.');console.log('User did not guess correctly')};
 
-var answerMe = prompt('Did you enjoy my web page? (y/n)').toLowerCase();
-if(answerMe === 'yes' || answerMe === 'y')
-{ alert('Thank you, that means a lot to me!');console.log('User enjoyed web page');}
-else{
-alert('Ah, thats to bad, tell me what I could do to improve it.');console.log('User did not enjoy web page, need improvement.')};
+//var answerWork = prompt('Did I work at walmart as a cashier before coming to code fellows? (y/n)').toLowerCase();
+//if(answerWork === 'yes' || answerWork === 'y')
+//{ alert('Yes I worked there for about nine months before coming to seattle');console.log('User guessed correctly');}
+//else{
+//alert('If only you were right about that!');console.log('User did not guess correctly')};
+
+//var answerSchool = prompt('Did I graduate highschool in may of 2019? (y/n)').toLowerCase();
+//if(answerSchool === 'yes' || answerSchool === 'y')
+//{ alert('Yes, I did and I am so glad to be done with it!');console.log('User guessed correctly');}
+//else{
+//alert('I would be very sad if you were right.');console.log('User did not guess correctly')};
+
+//var answerMagic = prompt('Do I love the collectable trading card game Magic the Gathering? (y/n)').toLowerCase();
+//if(answerMagic === 'yes' || answerMagic === 'y')
+//{ alert('Yes, its one of my favorite games, you try it!');console.log('User guessed correctly');}
+//else{
+//alert('That is indeed the wrong answer, ' + name + '.' + ' Magic is one of the best games ever made, you should try it.');console.log('User did not guess correctly.')};
+var numAnswer = prompt('Guess a number');
+var counter = 0
+for(var i = 0; i < 3; i++){
+    if(numAnswer === '7'){
+    alert('Correct');
+    break;
+    }else{
+    numAnswer = prompt('Try again')
+    counter++
+    }
+}
+if(counter === 3){
+    alert('The answer is 7')
+}
+//if(numAnswer === '7')
+//{ alert('Correct!');}
+//else{
+// alert('The correct answer is 7')
+//}
